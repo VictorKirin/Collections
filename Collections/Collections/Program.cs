@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace Collections
 {
     class Program
     {
+        static public Logger log = LogManager.GetCurrentClassLogger();
         static void Main(string[] args)
         {
             List<Human> doctor = new List<Human>()
@@ -46,6 +48,7 @@ namespace Collections
         public int Weight {get;set;}
         public string Specialization {get;set;}
     }
+
 }
 
 
